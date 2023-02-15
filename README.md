@@ -1,6 +1,6 @@
 # PENDING WORK to be done 
 
-
+## Make a small input form which takes name age gender as input below the video tag.
 ## Improving the UI using HTML CSS JS for a greater attractive LOOK
 ## Make sure to raise the issues and then make the contributions 
  #Lets make it A GREAT UI
