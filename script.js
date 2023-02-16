@@ -1,3 +1,6 @@
+
+// web cam js
+
 const video = document.getElementById('video')
 
 Promise.all([
