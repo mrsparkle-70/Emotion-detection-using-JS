@@ -3,6 +3,6 @@ const container = document.querySelector(".container");
 
 toggle.addEventListener("click", function () {
   toggle.classList.toggle("active");
-  document.body.classList.toggle("light");
+  document.body.classList.toggle("dark");
   container.classList.toggle("active");
 });
