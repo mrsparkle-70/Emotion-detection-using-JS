@@ -42,3 +42,24 @@ video.addEventListener('play', () => {
     })
   }, 100)
 })
+
+const arr=["Age","Gender"];
+const element=document.getElementById("input-field");
+let i=0;
+console.log(element);
+element.addEventListener("keydown",function(e){
+  console.log(e);
+  if(e.key=="Enter"){
+    e.preventDefault();
+    console.log(arr[i]);
+    $("#input-field").val(" ");
+    if(i>1){
+      $("#input-label").text("Full name");
+      i=0;
+    }
+    else{
+      $("#input-label").text(arr[i]);
+      i++;
+    }
+  }  
+});
