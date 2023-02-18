@@ -55,6 +55,10 @@
       height: 600px;
     }
 
+    .darkmode{
+      display: flex;
+      flex-direction:row;
+    }
     .toggle {
       background-color: hsl(0 100% 100% /0.2);
       width: 3.5rem;
@@ -68,8 +72,8 @@
 
       /* border: 2px solid red; */
       background-color: white;
-      top: -347px;
-      right: 187px;
+      right: 250px; 
+      margin-top: 5px;
     }
 
     .toggle.active {
@@ -152,7 +156,7 @@
             alt="Avatar Logo" style="width:40px;" class="rounded-pill">
           <span class="title">Emotion Detector</span>
         </a>
-
+        <div class="darkmode">
         <ul class="nav justify-content-center">
           <li class="nav-item">
             <a class="nav-link " href="#">
@@ -160,6 +164,10 @@
             </a>
           </li>
         </ul>
+        <div class="toggle">
+          <div class="indicator"></div>
+        </div>
+      </div>
 
       </div>
     </nav>
@@ -170,9 +178,7 @@
     <video id="video" width="720" height="560" autoplay muted></video>
   </div>
 
-  <div class="toggle">
-    <div class="indicator"></div>
-  </div>
+
 </body>
 
 </html>
