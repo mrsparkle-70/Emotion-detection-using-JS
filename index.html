@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="Input_Form_CSS/style.css">
   <title>Document</title>
   <script defer src="face-api.min.js"></script>
-  <script defer src="script.js"></script>
   <script defer src="darkMode.js"></script>
   <style>
     body {
@@ -38,7 +38,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-
+      margin-left: auto;
     }
 
     .container.active {
@@ -90,13 +90,34 @@
 
 <body>
   <div class="container">
-
     <video id="video" width="720" height="560" autoplay muted></video>
   </div>
-
   <div class="toggle">
     <div class="indicator"></div>
   </div>
-</body>
 
+  <!--INPUT FORM-->
+    <div class="card">
+      <div class="card-image">	
+        <h2 class="card-heading">
+          Get started
+          <small>Let us create your account</small>
+        </h2>
+      </div>
+      <form class="card-form">
+        <div class="input">
+          <input type="text" id="input-field" value=" " required/>
+          <label id="input-label">Full name</label>
+        </div>
+        <div class="action">
+          <button class="action-button">Get started</button>
+        </div>
+      </form>
+      <div class="card-info">
+        <p>By signing up you are agreeing to our <a href="#">Terms and Conditions</a></p>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="script.js"></script>
+</body>
 </html>
