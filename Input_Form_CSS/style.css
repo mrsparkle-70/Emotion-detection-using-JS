@@ -17,7 +17,7 @@ input {
 }
 
 .card {
-  margin: 2rem auto;
+  margin: 2rem 2rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
