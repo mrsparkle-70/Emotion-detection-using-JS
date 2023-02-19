@@ -26,8 +26,9 @@
       margin: 0;
       padding: 0;
       /* width: 100vw; */
-      height: 100vh;
+      /* height: 100vh; */
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
 
@@ -145,6 +146,19 @@
       font-family: cursive;
       font-weight: bold;
     }
+    .foot{
+    width: 100%;
+    height: 3.5rem;
+    background-image: linear-gradient(to bottom, #07f070, #8793bb);
+    color: rgb(29, 41, 51);
+    margin-top: auto;
+}
+.foot p{
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 3.5rem;
+}
   </style>
 </head>
 
@@ -180,7 +194,9 @@
     <video id="video" width="720" height="560" autoplay muted></video>
   </div>
 
-
+  <footer class="foot">
+    <p>This website is made by Subham Sinha. Don't Copy &copy This</p>
+</footer>
 </body>
 
 </html>
