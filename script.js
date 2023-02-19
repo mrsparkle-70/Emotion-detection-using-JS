@@ -4,11 +4,11 @@
 const video = document.getElementById('video')
 
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromUri('../assets/weights'),
-  faceapi.nets.faceLandmark68Net.loadFromUri('../assets/weights'),
-  faceapi.nets.faceRecognitionNet.loadFromUri('../assets/weights'),
-  faceapi.nets.faceExpressionNet.loadFromUri('../assets/weights'),
-  faceapi.nets.ageGenderNet.loadFromUri('../assets/weights')
+  faceapi.nets.tinyFaceDetector.loadFromUri('./weights'),
+  faceapi.nets.faceLandmark68Net.loadFromUri('./weights'),
+  faceapi.nets.faceRecognitionNet.loadFromUri('./weights'),
+  faceapi.nets.faceExpressionNet.loadFromUri('./weights'),
+  faceapi.nets.ageGenderNet.loadFromUri('./weights')
 ]).then(startVideo)
 
 
