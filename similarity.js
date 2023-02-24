@@ -28,19 +28,36 @@ video.addEventListener('play', () => {
   const displaySize = { width: video.width, height: video.height }
   faceapi.matchDimensions(canvas, displaySize)
   setInterval(async () => {
-    const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks().withFaceExpressions().withAgeAndGender()
-
+    // Detect faces in the video frame
+    const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions())
+      .withFaceLandmarks()
+      .withFaceDescriptors()
+  
+    // Resize the bounding boxes to match the display size
     const resizedDetections = faceapi.resizeResults(detections, displaySize)
+  
+    // Clear the canvas
     canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height)
+  
+    // Draw bounding boxes around the detected faces
     faceapi.draw.drawDetections(canvas, resizedDetections)
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections)
-    faceapi.draw.drawFaceExpressions(canvas, resizedDetections)
-    resizedDetections.forEach( detection => {
-      const box = detection.detection.box
-      const drawBox = new faceapi.draw.DrawBox(box, { label: Math.round(detection.age) + " year old " + detection.gender})
-      drawBox.draw(canvas)
-    })
-
-    
+  
+    // Calculate the face similarity between the first two detected faces
+    if (resizedDetections.length >= 2) {
+      const face1 = resizedDetections[0].descriptor
+      const face2 = resizedDetections[1].descriptor
+      const distance = faceapi.euclideanDistance(face1, face2)
+      console.log(`Face similarity: ${distance}`)
+      const sim=document.getElementById("face-similarity")
+      if(distance<0.6){
+        sim.innerText='two faces are similar with distance'+parseFloat(distance.toFixed(2))
+      }
+      else{
+        sim.innerText='two faces are not similar! '
+      }
+      
+    }
   }, 100)
+  
 })
