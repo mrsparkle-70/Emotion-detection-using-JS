@@ -8,7 +8,7 @@
   <title>Emotion Detector</title>
   <link rel="shortcut icon"  href="favicon.ico"/>
   <script defer src="face-api.min.js"></script>
-  <script defer src="script.js"></script>
+  <script defer src="similarity.js"></script>
   <script defer src="darkMode.js"></script>
  
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -167,18 +167,19 @@
   padding: 3px;
   text-decoration: none;
 }
-.face-similarity{
-  position: relative;
-  top: 200px;
-}
-.Detect-similarity a{
+.Detect-face a{
   border: none;
   color: #434343;
   background-color: rgb(9, 255, 0);
   border-radius: 10px;
   padding: 3px;
   text-decoration: none;
-  margin-left: 3px;
+
+}
+#face-similarity{
+  color: black;
+  background-color: #07f070;
+  border-bottom: #8793bb;
 }
 
   </style>
@@ -194,6 +195,7 @@
             alt="Avatar Logo" style="width:40px;" class="rounded-pill">
           <span class="title">Emotion Detector</span>
         </a>
+
         <div class="darkmode">
         <ul class="nav justify-content-center">
           <li class="nav-item">
@@ -209,8 +211,8 @@
         <div class="image-option">
           <a href="uploadPic.html">Upload Image</a>
         </div>
-        <div class="Detect-similarity">
-          <a href="similarity.html">Detect-similarity</a>
+        <div class="Detect-face">
+          <a href="index.html">Detect-Face</a>
         </div>
       </div>
 
@@ -222,6 +224,8 @@
 
     <video id="video" width="720" height="560" autoplay muted></video>
   </div>
+  <div id="face-similarity"></div>
+
   <footer class="foot">
     <p>This website is made by Subham Sinha. Don't Copy &copy This</p>
 </footer>
