@@ -58,6 +58,10 @@
       height: 600px;
     }
 
+    .c1{
+      font-size: 10rem !important;
+    }
+
     .darkmode{
       display: flex;
       flex-direction:row;
@@ -202,8 +206,20 @@ animation: vanish 3s forwards;
   text-decoration: none;
   margin-left: 3px;
 }
-
-
+#icon{
+  height: 3rem;
+  background-color: #f00707;
+  border-radius: 50%;
+  margin: 1rem;
+}
+.switch{
+  display: none;
+}
+#cam-notice{
+  position: absolute;
+  z-index: -1;
+  color: #434343;
+}
   </style>
 </head>
 
@@ -244,10 +260,16 @@ animation: vanish 3s forwards;
     </nav>
   </section>
 
-  <div class="container">
-
+    <div class="container">
+      <h1 id="cam-notice">The Cam is currently Off..</h1>
     <video id="video" width="720" height="560" autoplay muted></video>
   </div>
+
+  <div>
+    <img id="icon" src="pow-button.png" alt="camOff-switch" onclick="toggleCam()" >
+  </div>
+
+
   <footer class="foot">
     <p>This website is made by Subham Sinha. Don't Copy &copy This</p>
 </footer>
