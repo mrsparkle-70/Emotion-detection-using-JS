@@ -2,6 +2,13 @@
 // web cam js
 
 const video = document.getElementById('video')
+let icon = document.getElementById("icon");
+
+
+function toggleCam(){
+    video.classList.toggle("switch");
+  (video.classList.contains("switch")) ? icon.style.backgroundColor= "green" : icon.style.backgroundColor= "red";
+}
 
 Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri('./weights'),
