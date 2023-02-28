@@ -21,170 +21,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Roboto+Slab:wght@300&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./handset.css" media="screen and (max-width: 1100px)">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      background-color: rgb(255, 255, 204);
-      color: hsl(0 100% 100% /85%);
-      transition: 0.6s ease;
-    }
-
-
-    canvas {
-      position: absolute;
-    }
-
-    body.dark {
-      background-color: rgb(34, 34, 43);
-      color: rgb(34, 34, 43);
-    }
-
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: 4px solid green;
-      margin-top: 50px;
-      width: 800px;
-      height: 600px;
-    }
-
-    .c1 {
-      font-size: 10rem !important;
-    }
-
-    .darkmode {
-      display: flex;
-      flex-direction: row;
-    }
-
-    .offcanvasNavbar{
-      background-color: #07f070;
-    }
-
-    .toggle {
-      background-color: rgb(59, 59, 57);
-      width: 3.5rem;
-      height: 2rem;
-      border-radius: 20rem;
-      cursor: pointer;
-      position: absolute;
-    }
-
-    .toggle.active {
-      background-color: rgb(59, 59, 57);
-    }
-
-    .indicator {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 2rem;
-      height: 2rem;
-      border-radius: 50%;
-      background: white;
-      transition: all 0.18s ease-in;
-    }
-
-    .toggle.active .indicator {
-      transition: all 0.18s ease-in;
-      left: 2rem;
-      background: linear-gradient(to bottom right, #434343 0% black 100%);
-      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1),
-        inset 0 4px 10px rgba(250, 250, 250, 0.1),
-        inset 0 -4px 10px rgba(250, 250, 250, 0.1);
-    }
-    .menu {
-      background-color: green;
-      width: 98%;
-      height: 40px;
-    }
-
-    .title {
-      font-family: cursive;
-      font-weight: bold;
-    }
-
-    .foot {
-      width: 100%;
-      height: 3.5rem;
-      background-image: linear-gradient(to bottom, #07f070, #8793bb);
-      color: rgb(29, 41, 51);
-      margin-top: auto;
-    }
-
-    .foot p {
-      font-size: 1.2rem;
-      text-align: center;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      line-height: 3.5rem;
-    }
-
-    .loader {
-      margin: 0;
-      position: fixed;
-      background: black;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    .disappear {
-      animation: vanish 3s forwards;
-    }
-
-    @keyframes vanish {
-      100% {
-        opacity: 0;
-        visibility: hidden;
-      }
-    }
-
-    .navitems{
-      font-size: 1.3rem;
-      padding-bottom: 2rem;
-      color: white;
-    }
-    
-    #themeText{
-      padding-left: 5rem;
-    }
-
-    #icon {
-      height: 3rem;
-      background-color: #f00707;
-      border-radius: 50%;
-      margin: 1rem;
-    }
-
-    .switch {
-      display: none;
-    }
-
-    #cam-notice {
-      position: absolute;
-      z-index: -1;
-      color: #434343;
-    }
-
-    a{
-      color: white;
-      text-decoration: none;
-    }
-
-    @media screen and (max-width: 730px){
-      
-    }
-  </style>
+<link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
@@ -232,20 +69,20 @@
       </div>
     </div>
   </nav>
-  </section>
-
-  <div class="container" style="margin-top: 6rem">
+  <div class="container" style="margin-top: 4rem">
     <h1 id="cam-notice">The Cam is currently Off..</h1>
-    <video id="video" width="720" height="560" autoplay muted></video>
+    <video id="video" autoplay muted></video>
   </div>
+<div id="btn">
 
   <div>
     <img id="icon" src="pow-button.png" alt="camOff-switch" onclick="toggleCam()">
   </div>
+</div>
+  
 
-
-  <footer class="foot">
-    <p>This website is made by Subham Sinha. Don't Copy &copy This</p>
+  <footer class="d-flex-col flex-wrap justify-content-center align-items-center">
+    <span>This website is made by Subham Sinha. Don't Copy &copy This</span>
   </footer>
 </body>
 <script>
