@@ -163,6 +163,9 @@ body {
     color: white;
     text-decoration: none;
   }
+  a:hover{
+    color: white;
+  }
 
   video{
     width: 720px;
