@@ -72,7 +72,9 @@ video.addEventListener('play', () => {
       const face1 = resizedDetections[0].descriptor
       const face2 = resizedDetections[1].descriptor
       const distance = faceapi.euclideanDistance(face1, face2)
-      console.log(`Face similarity: ${distance}`)
+      
+      // Display Value in to DOM
+      faceValue.innerHTML = `Face similarity: ${(distance * 100).toFixed(2)}%`
       const sim=document.getElementById("face-similarity")
       if(distance<0.6){
         sim.innerText='two faces are similar with distance'+parseFloat(distance.toFixed(2))
