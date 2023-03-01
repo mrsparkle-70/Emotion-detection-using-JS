@@ -11,6 +11,25 @@ Promise.all([
   faceapi.nets.ageGenderNet.loadFromUri('./weights')
 ]).then(startVideo)
 
+function setDimensions(sreenSize) {
+  if (sreenSize.matches) { // If media query matches
+    heightcanvas = 200
+    widthcanvas = 300
+  }else{
+     heightcanvas = Number((video.style.height).slice(0, 3))
+ widthcanvas = Number((video.style.width).slice(0, 3))
+  }
+
+}
+
+//checking if the device is mobile or PC
+var screenSize = window.matchMedia("(max-width: 700px)")
+
+var heightcanvas = 0
+var widthcanvas = 0
+
+//based on results setting new dimensions of the canvas
+setDimensions(screenSize)
 
 startVideo()
 
@@ -25,7 +44,7 @@ function startVideo() {
 video.addEventListener('play', () => {
   const canvas = faceapi.createCanvasFromMedia(video)
   document.body.append(canvas)
-  const displaySize = { width: video.width, height: video.height }
+  const displaySize = { width: widthcanvas, height: heightcanvas }
   faceapi.matchDimensions(canvas, displaySize)
   setInterval(async () => {
     // Detect faces in the video frame
