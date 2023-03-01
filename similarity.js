@@ -3,6 +3,11 @@
 
 const video = document.getElementById('video')
 
+function toggleCam() {
+  video.classList.toggle("switch");
+  (video.classList.contains("switch")) ? icon.style.backgroundColor = "green" : icon.style.backgroundColor = "red";
+}
+
 Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri('./weights'),
   faceapi.nets.faceLandmark68Net.loadFromUri('./weights'),
