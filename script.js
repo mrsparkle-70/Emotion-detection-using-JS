@@ -3,7 +3,10 @@
 
 const video = document.getElementById('video')
 let icon = document.getElementById("icon");
-
+navigator.getUserMedia = ( navigator.getUserMedia ||
+  navigator.webkitGetUserMedia ||
+  navigator.mozGetUserMedia ||
+  navigator.msGetUserMedia);
 
 function toggleCam() {
   video.classList.toggle("switch");
@@ -30,6 +33,17 @@ function setDimensions(sreenSize) {
 
 }
 
+const camera=document.getElementsByClassName("button-85")[0];
+camera.addEventListener('click',function(e){
+  if(camera.innerHTML=="Camera on"){
+    cameraoff();
+    camera.innerHTML="Camera off";
+  }
+  else{
+    startVideo();
+    camera.innerHTML="Camera on";
+  }
+})
 //checking if the device is mobile or PC
 var screenSize = window.matchMedia("(max-width: 700px)")
 
@@ -49,6 +63,18 @@ function startVideo() {
   )
 }
 
+function cameraoff() {
+  const stream = video.srcObject;
+  if (stream) {
+    const tracks = stream.getTracks();
+
+    tracks.forEach(function (track) {
+      track.stop();
+    });
+
+    video.srcObject = null;
+ }
+}
 video.addEventListener('play', () => {
   const canvas = faceapi.createCanvasFromMedia(video)
   document.body.append(canvas)
