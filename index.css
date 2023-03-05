@@ -88,7 +88,7 @@ body {
     font-weight: bold;
   }
 
-  footer {
+  #footer {
     height: 3rem;
     display: flex;
     position: relative;
@@ -100,13 +100,14 @@ body {
     color: white;
   }
 
-  footer span {
+  #footer span {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 0.9rem;
     font-weight: bold;
     text-align: center;
     line-height: 3rem;
+
   }
 
   .loader {
@@ -309,10 +310,7 @@ body {
         height: 400px !important;
       }
 
-      footer{
-        position: fixed;
-      }
-      footer span{
+      #footer span{
         font-size: 70%;
       }
       .footer1{
@@ -336,6 +334,15 @@ body {
       .subscribe-form{
         padding-bottom: 40px;
       }
+  }@media screen and (max-width: 500px){
+    #footer span{
+      font-size: 9px;
+      line-height: 1rem;
+    }
+
+    .container{
+      margin-top: 7rem !important;
+    }
   }
   @media screen and (max-width: 400px){
     .container{
@@ -352,13 +359,9 @@ body {
       }
   }
   
-      footer{
-        position: fixed;
-      }
-      footer span{
+      #footer span{
         font-size: small;
       }
-  }
 
   ::-webkit-scrollbar{
     width: 10px;
