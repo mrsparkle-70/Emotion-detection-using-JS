@@ -7,9 +7,7 @@
     font-family: 'Poppins',sans-serif;
 }
 
-
 body{
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,10 +15,14 @@ body{
 }
 
 .slide-container{
-    max-width: 1300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    max-width: 1200px;
+    /* max-height: 520px; */
     background-color: #42b174;
     width:100%;
-    padding: 25px 0;
+    padding-top: 10px;
+    padding-bottom: 25px;
     border-radius: .9rem;
 }
 
@@ -28,16 +30,21 @@ body{
     color:black;
     text-align: center;
     font-size: 1.5rem;
+    text-shadow: 2px 2px 10px white;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .slide-container h2{
     color:black;
     font-size: 1.2rem;
     text-align: center;
+    letter-spacing: 3px;
+    color: rgb(165,42,42);
 }
 
 .slide-content{
-    padding: 45px 20px;
     margin:0 40px;
     background-color: #fff;
      overflow: hidden;
@@ -130,11 +137,14 @@ body{
     border-radius: 6px;
     margin: 14px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: transform .2s;
+    letter-spacing: 1.5px;
 }
 
 .button:hover{
     background-color: green;
+    transform: scale(1.15);
+    font-weight: bold;
 }
 
 .swiper-navBtn{

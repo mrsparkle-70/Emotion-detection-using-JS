@@ -50,14 +50,18 @@ The video eventListener for `play` fires up too early on low-end machines, befor
 ## 📸 Screenshots Of The Project
 
 
-![Screenshot (4571)](https://user-images.githubusercontent.com/55338588/219953943-be08f86a-0fa0-4ddf-9184-d6a88fb89f30.png)
+![ss1](https://user-images.githubusercontent.com/91181981/222946613-4ede0f58-9026-40ca-8d59-46ea74de6702.png)
 
-![Screenshot (4572)](https://user-images.githubusercontent.com/55338588/219953952-09df7061-5d1e-4002-b628-959a83c84f4a.png)
 
-![Screenshot (4573)](https://user-images.githubusercontent.com/55338588/219953961-a4a725e4-c520-4a4d-9db4-23143379392d.png)
+![ss2](https://user-images.githubusercontent.com/91181981/222946635-0d6be4a6-c3a7-406c-a38f-3ccb9da2a405.png)
 
-![Screenshot (4574)](https://user-images.githubusercontent.com/55338588/219953973-26ed8c4e-d371-42cd-b424-ee7499a142b4.png)
 
+![ss3](https://user-images.githubusercontent.com/91181981/222946638-8932d674-0215-4250-b829-b18995ad7095.png)
+
+![ss5](https://user-images.githubusercontent.com/91181981/222946643-544d35ee-ed7e-4a3f-98c2-215a5b1eb23b.png)
+![ss6](https://user-images.githubusercontent.com/91181981/222946906-ff01f2c5-30dd-4330-ae7c-805d0db779a2.png)
+
+![ss4](https://user-images.githubusercontent.com/91181981/222946645-11017788-23da-44b8-afb8-9e7bdc5ff60c.png)
 
 
 
