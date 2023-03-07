@@ -112,8 +112,11 @@
       </div>
       <div class="subscribe-form">
         <h3>Any queries, let us know</h3>
-        <form action="#">
-          <input type="text" placeholder="Email Address"></input>
+        <form action="https://formsubmit.co/your@email.com" method="POST" style="display: flex; justify-content: space-evenly;">
+          <div style="display: flex; flex-direction: column;">
+            <input type="email" placeholder="Enter your Email" name="Email" style="margin-bottom: 3px;">
+            <input type="textarea" placeholder="Enter Issue" name="Issue"></input>
+          </div>
           <button class="msg"><i class="fa fa-telegram"></i></button>
         </form>
       </div>
