@@ -178,14 +178,23 @@ body{
     background-color: green;
 }
 
-@media screen and (max-width:768px) {
-    .swiper-navBtn{
-        display: none;
-    }
+@media screen and (max-width:1336px) {
 
     .slide-content{
-        margin:0 10px;
+        margin:0px 35px;
     }
-    
+    .card-content p{
+        font-size: 90%;
+    }
+    .swiper{
+        width: 85%;
+    }
+    .card{
+        width: 80%;
+    }
+    .button{
+        font-size: 80%;
+    }
+
 }
 
