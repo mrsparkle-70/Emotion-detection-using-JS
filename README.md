@@ -17,11 +17,10 @@
 
 ## 📌 Tech Stack
 
-[![linkedin](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://www.linkedin.com/)
-[![portfolio](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://katherineoelsner.com/)
-[![twitter](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://twitter.com/)
-
-
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 
 ## 🚀 PENDING WORK: To Be Done
 
@@ -30,7 +29,6 @@
 2. Improving the UI using HTML CSS JS for a greater attractive LOOK.
 
 3. Make sure to raise the issues and then make the contributions.
-
 
 **Let's make it A GREAT UI**
 
@@ -96,48 +94,55 @@ Run command `git init`
 git clone https://github.com/<your_github_username>/Emotion-detection-using-JS
 ```
 
-6. Open `index.html` in your browser.
+6. Run the following commands in the root directory 
+```bash
+# Install NodeJS modules
+npm install
 
-7. View the Project here.
+# Start the development server
+npm start
 
-8. Raise an issue if you find a bug or add a feature.
+# This will start dev server at localhost:3000
+```
 
-9. Wait for the issue to be assigned and proceed only after the issue is assigned to you.
+7. Raise an issue if you find a bug or add a feature.
 
-10. Navigate to the project directory.
+8. Wait for the issue to be assigned and proceed only after the issue is assigned to you.
+
+9. Navigate to the project directory.
 
 ```bash
 cd Emotion-detection-using-JS
 ```
 
-11. Add a reference(remote) to the original repository.
+10. Add a reference(remote) to the original repository.
 
 ```bash
 git remote add upstream https://github.com/mrsparkle-70/Emotion-detection-using-JS.git
 ```
 
-12. Check the remotes for this repository.
+11. Check the remotes for this repository.
 
 ```bash
 git remote -v
 ```
 
-13. Always take a pull from the upstream repository to your main branch to keep it updated as per the main project repository.
+12. Always take a pull from the upstream repository to your main branch to keep it updated as per the main project repository.
 
 ```bash
 git pull upstream main
 ```
 
-14. Create a new branch for your feature.
+13. Create a new branch for your feature.
 
 ```bash
 git checkout -b <your_branch_name>
 ```
 
-15. Perfom your desired changes to the code base.
+14. Perfom your desired changes to the code base.
 
 
-16. Track and stage your changes.
+15. Track and stage your changes.
 
 ```bash
 # Track the changes
@@ -147,26 +152,26 @@ git status
 git add .
 ```
 
-17. Commit your changes.
+16. Commit your changes.
 
 ```bash
 git commit -m "your_commit_message"
 ```
 
-18. Push your committed changes to the remote repo.
+17. Push your committed changes to the remote repo.
 
 ```bash
 git push origin <your_branch_name>
 ```
 
-19. Go to your forked repository on GitHub and click on `Compare & pull request`.
+18. Go to your forked repository on GitHub and click on `Compare & pull request`.
 
-20. Add an appropriate title and description to your pull request explaining your changes and efforts done.
+19. Add an appropriate title and description to your pull request explaining your changes and efforts done.
 
-21. Click on `Create pull request`.
+20. Click on `Create pull request`.
 
 
-Congrats! 🥳 You've made your first pull request to this project repo.
+### Congrats! 🥳 You've made your first pull request to this project repo.
 
 Wait for your pull request to be reviewed and if required suggestions would be provided to improve it.
 
