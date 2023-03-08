@@ -1,0 +1,29 @@
+{
+  "name": "emotion-detection-using-js",
+  "version": "1.0.0",
+  "description": "A JS application used to detect face emotions",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrsparkle-70/Emotion-detection-using-JS.git"
+  },
+  "keywords": [
+    "emotions.",
+    "machine-learning"
+  ],
+  "author": "Subham Sinha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrsparkle-70/Emotion-detection-using-JS/issues"
+  },
+  "homepage": "https://github.com/mrsparkle-70/Emotion-detection-using-JS#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21"
+  }
+}
