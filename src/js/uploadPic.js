@@ -1,11 +1,11 @@
 const mediaContainer = document.getElementById("media-container");
 
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromUri("./weights"),
-  faceapi.nets.faceLandmark68Net.loadFromUri("./weights"),
-  faceapi.nets.faceRecognitionNet.loadFromUri("./weights"),
-  faceapi.nets.faceExpressionNet.loadFromUri("./weights"),
-  faceapi.nets.ageGenderNet.loadFromUri("./weights"),
+  faceapi.nets.tinyFaceDetector.loadFromUri("../src/weights"),
+  faceapi.nets.faceLandmark68Net.loadFromUri("../src/weights"),
+  faceapi.nets.faceRecognitionNet.loadFromUri("../src/weights"),
+  faceapi.nets.faceExpressionNet.loadFromUri("../src/weights"),
+  faceapi.nets.ageGenderNet.loadFromUri("../src/weights"),
 ]).then(startVideo);
 
 document.getElementById("imageUpload").addEventListener("change", async () => {
