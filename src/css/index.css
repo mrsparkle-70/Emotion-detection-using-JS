@@ -310,6 +310,11 @@ body {
         height: 400px !important;
       }
 
+    #dbform{
+      display: flex !important;
+      flex-direction: column !important;
+    }
+
       #footer span{
         font-size: 70%;
       }
