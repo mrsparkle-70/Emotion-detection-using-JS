@@ -16,6 +16,10 @@ document.getElementById("imageUpload").addEventListener("change", async () => {
   mediaContainer.innerHTML = "";
   const img = document.createElement("img");
   img.src = image.src;
+  img.style.height = "400px"
+  img.style.width = "400px"
+  img.style.border = "5px solid green"
+  img.style.padding = "1rem"
   mediaContainer.appendChild(img);
   startVideo(image);
 });
@@ -24,8 +28,8 @@ function startVideo(img) {
   const canvas = faceapi.createCanvasFromMedia(img || video);
   mediaContainer.appendChild(canvas);
   const displaySize = {
-    width: img ? img.width : video.width,
-    height: img ? img.height : video.height,
+    width: 400,
+    height: 400,
   };
   faceapi.matchDimensions(canvas, displaySize);
   setInterval(async () => {
