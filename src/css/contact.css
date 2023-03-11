@@ -1,0 +1,187 @@
+input[type=text],input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 3px solid rgb(91, 91, 240);
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color:#3586ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  form{
+    color: black;
+  }
+
+  .herocontainer{
+    text-align: center;
+  }
+  .herocontainer h1{
+    margin-top: 100px;
+    color: maroon;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 3px;
+  }
+
+  .herocontainer h4{
+    color: rgba(0,0,0,0.85);
+    letter-spacing: 3.5px;
+  }
+  input[type=submit]:hover {
+    background-color: white;
+    color: black;
+    border: 3px solid rgb(91,91,240);
+    
+  }
+  .row{
+    display: flex;
+    flex-direction: row !important;
+    padding: 100px;
+    overflow-x: hidden !important;
+  }
+
+  textarea{
+    height: 160px !important;
+  }
+  
+  .column {
+    width: 50% !important;
+    padding: 20px;
+    overflow: hidden;
+  }
+  #comping{
+    float: left;
+  }
+
+  .column h3{
+  font-weight: bold;
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
+  color: maroon;
+
+  }
+
+  .column p{
+    font-size: 1.1rem;
+    color: black;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .bubblescontainer1 {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+   
+@media screen and (max-width:1280px) {
+  .column h3{
+    font-size: 130%;
+  }
+  input[type=text],input[type=number], select, textarea {
+    padding: 5px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    resize: vertical;
+  }
+  textarea{
+    height:124px !important;
+  }
+  .herocontainer h1{
+    font-size: 130%;
+  }
+  .herocontainer p{
+    font-size: 80%;
+  }
+  
+}
+@media screen and (max-width:1120px) and (min-width:880px) {
+  .column h3{
+    font-size: 130%;
+  }
+  input[type=text],input[type=number], select, textarea {
+    padding: 3px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    resize: vertical;
+  }
+  textarea{
+    height:80px !important;
+  }
+  
+}
+@media screen and (max-width:880px) and (min-width:740px) {
+  .column h3{
+    font-size: 110%;
+  }
+  .column p{
+    font-size: 100%;
+  }
+  input[type=text],input[type=number], select, textarea {
+    padding: 3px;
+    margin-top: 1px;
+    margin-bottom: 2px;
+    resize: vertical;
+  }
+  textarea{
+    height:40px !important;
+  }
+  
+}
+@media screen and (max-width:740px) and (min-width:0px) {
+  .row{
+    flex-direction: column !important;
+    margin: auto 0 !important;
+    align-items: center;
+    padding: 0;
+  }
+  .column{
+    float: none !important;
+    width: 100%;
+    text-align: center;
+    /* padding: 0 60px 60px 60px; */
+    margin: auto 0 !important;
+  }
+  .column h3{
+    font-size: 100%;
+  }
+  .column p{
+    font-size:85%;
+    text-align: center;
+  }
+  input[type=text],input[type=number], select, textarea {
+    width: 100%;
+    padding: 3px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    resize: vertical;
+  }
+  textarea{
+    height:80px !important;
+  }
+  .herocontainer h4{
+    font-size: 90%;
+  }
+  .herocontainer{
+    margin-bottom: 20px;
+  }
+  
+} 
