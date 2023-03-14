@@ -256,7 +256,7 @@ body {
   
   .footer1 {
     /* background-color: rgb(25,135,84); */
-    background-image: linear-gradient(to bottom, #07f070, #8793bb);;
+    background-image: linear-gradient(#000000,#132e3d,#095e52,#13662f);
     display: flex;
     color: black;
     padding-left: 70px;
