@@ -7,7 +7,21 @@
 
 
 ## About The Project
-
+<div align="center">
+<img src="https://forthebadge.com/images/badges/built-with-love.svg" />
+  <img src="https://forthebadge.com/images/badges/open-source.svg" /><br>
+ <img src="https://img.shields.io/badge/-PRs%20welcome-green" />
+  <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fmrsparkle-70%2FEmotion-detection-using-JS&countColor=%23263759&style=flat" />
+  <img src="https://img.shields.io/github/forks/mrsparkle-70/Emotion-detection-using-JS" />
+  <img src="https://img.shields.io/github/stars/mrsparkle-70/Emotion-detection-using-JS" />
+  <img src="https://img.shields.io/github/last-commit/mrsparkle-70/Emotion-detection-using-JS" /><br>
+   <img src="https://img.shields.io/github/issues/mrsparkle-70/Emotion-detection-using-JS" />
+  <img src"https://img.shields.io/github/issues-closed-raw/mrsparkle-70/Emotion-detection-using-JS" />
+  <img src="https://img.shields.io/github/issues-closed-raw/mrsparkle-70/Emotion-detection-using-JS" />
+  <img src="https://img.shields.io/github/issues-pr-raw/mrsparkle-70/Emotion-detection-using-JS" />
+  <img src="https://img.shields.io/github/issues-pr-closed/mrsparkle-70/Emotion-detection-using-JS" />
+  </div>
+  
 
 ## 💥 Features
 
@@ -209,7 +223,7 @@ You can refer to the following articles on the basics of Git and Github and also
 
 
 
-## 😍 Our Valuable Contributers
+## 😍 Our Valuable Contributors
 
 Thanks to these wonderful people ✨
 
