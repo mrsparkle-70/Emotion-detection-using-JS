@@ -3,6 +3,6 @@
 //     console.log(`letter ${i} is ${l[i].getTotalLength()}`)
 // }
 function redirectpage(){
-    window.location="index.html";
+    window.location="/";
 }
 setTimeout('redirectpage()', 3500);
