@@ -8,9 +8,9 @@
   <title>Emotion Detector</title>
   <link rel="shortcut icon" href="./images/favicon.ico" />
   <script defer src="./js/face-api.min.js"></script>
-  <script defer src="./js/script.js"></script>
+  <script defer src="./js/similarity.js"></script>
   <script defer src="./js/darkMode.js"></script>
-  <link rel="stylesheet" href="./css/button.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
@@ -20,9 +20,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Roboto+Slab:wght@300&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./css/button.css">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/translate.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
@@ -32,7 +33,7 @@
   </div>
   <nav class="navbar bg-success fixed-top navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html" style="color: white">
+      <a class="navbar-brand" href="/" style="color: white">
         <img src="./images/favicon.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">Emotion
         Detector</a>
       <button class="button-85" role="button">Camera on</button>
@@ -53,7 +54,7 @@
               <a class="nav-link active navitems" aria-current="page" href="./landing.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active navitems" aria-current="page" href="./testimonial.html">Testimonial</a>
+              <a class="nav-link active navitems" aria-current="page" href="/testimonial">Testimonial</a>
             </li>
             <li class="nav-item navitems">
               <div class="toggle">
@@ -65,22 +66,22 @@
             </li>
             <li>
               <div class="navitems">
-                <a href="./uploadPic.html">Upload Image</a>
+                <a href="/uploadPic">Upload Image</a>
               </div>
             </li>
             <li>
               <div class="navitems">
-                <a href="./similarity.html">Detect-similarity</a>
+                <a href="/index">Detect-Face</a>
               </div>
             </li>
             <li>
               <div class="navitems">
-                <a href="./contact.html">Contact Us</a>
+                <a href="/contact">Contact Us</a>
               </div>
             </li>
             <li>
               <div class="navitems">
-                <a href="./faq.html">Frequently Asked Questions</a>
+                <a href="/faq">Frequently Asked Questions</a>
               </div>
             </li>
             <li>
@@ -106,13 +107,12 @@
       </div>
     </div>
   </nav>
-
-  <!-- Video section  -->
-  <div class="container" style="margin-top: 4rem; margin-bottom: 1rem;">
+  <span style="color: black; margin-top: 4rem; color: green; font-weight: bold; " id="faceValue"></span>
+  <div class="container" style="margin-top: 1rem; font-weight: bolder; margin-bottom: 1rem;">
     <h1 id="cam-notice">The Cam is currently Off..</h1>
     <video id="video" autoplay muted style="height: 560px; width: 720px; "></video>
   </div>
-  <!-- Form  -->
+    <!-- Form  -->
   <form class="row g-3" action="/savetodb" method="POST" id="dbform">
     <div class="col-auto">
       <input type="text" class="form-control" id="inputtext" placeholder="What's your Name ?" name="name">
@@ -132,7 +132,7 @@
       <button type="submit" class="btn btn-success mb-3">Save Data</button>
     </div>
   </form>
-  <!-- Footer section  -->
+    <!-- Footer section  -->
   <div class="footer" style="flex-direction: column;">
 
     <div class="footer1">
@@ -173,7 +173,7 @@
       </div>
     </div>
     <div class="d-flex-col flex-wrap justify-content-center align-items-center" id="footer">
-      <span>This website is made by Subham Sinha under the guidance of Prof. Nibaran Das of CMATER Lab , Jadavpur University.</span>
+      <span>This website is made by Subham Sinha. Don't Copy &copy This</span>
     </div>
   </div>
 </body>
