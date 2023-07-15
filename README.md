@@ -220,9 +220,6 @@ You can refer to the following articles on the basics of Git and Github and also
   <img src="https://contrib.rocks/image?repo=mrsparkle-70/mrsparkle-70" />
 </a>
 
-
-
-
 ## 😍 Our Valuable Contributors
 
 Thanks to these wonderful people ✨
